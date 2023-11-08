@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fon" />
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25sp"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:text="Добро пожаловать"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opisanie"
+        android:layout_width="138sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Выполните вход или зарегестрируйтесь"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/conteinerKnopok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pochta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gray"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/okrugleniepochti"
+            android:hint="Введите вашу почту"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/parol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/okrugleniepochti"
+            android:hint="Введите пароль"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/knopkaVoiti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/okrugleniepochti"
+            android:padding="15dp"
+            android:text="Войти"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange" />
+
+        <LinearLayout
+            android:id="@+id/lianer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/dontParol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Забыли пароль?"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/najmiSuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:text="Нажми сюда"
+                android:textColor="@color/orange" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
